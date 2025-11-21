@@ -53,11 +53,9 @@ var dialogue_items: Array[Dictionary] = [
 	}
 ]
 var current_item_index := 0
-
+@onready var action_buttons_v_box_container: VBoxContainer = %ActionButtonsVBoxContainer
 ## UI element that shows the texts
 @onready var rich_text_label: RichTextLabel = %RichTextLabel
-## UI element that progresses to the next text
-@onready var next_button: Button = %NextButton
 ## Audio player that plays voice sounds while text is being written
 @onready var audio_stream_player: AudioStreamPlayer = %AudioStreamPlayer
 ## The character
